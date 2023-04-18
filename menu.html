@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- magnific-popup css cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"
+    />
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="menu.css" />
+  </head>
+  <body>
+    <div class="heading">
+      <h1>Canteen</h1>
+      <h2>&mdash;menu&mdash;</h2>
+    </div>
+
+    <div class="gallery">
+      <ul class="controls">
+        <li class="buttons active" data-filter="all">all</li>
+        <li class="buttons" data-filter="Breakfast">Breakfast</li>
+        <li class="buttons" data-filter="Lunch">Lunch</li>
+        <li class="buttons" data-filter="Drinks">Drinks</li>
+        <li class="buttons" data-filter="Bakery">Bakery</li>
+      </ul>
+
+  
+      <div class="image-container">
+        <a href="images/samosa.jpg" class="image Breakfast" alt="">
+          <img src="images/samosa.jpg" alt="" /></a></br>
+          <div class="image-title">
+    <h2>samosa</h2>
+    <button>add</button>
+          </div>
+
+
+    
+      <a href="images/samosa.jpg" class="image Breakfast" alt="">
+        <img src="images/samosa.jpg" alt="" />
+</a>
+  
+      <a href="images/chana.jpg" class="image Breakfast">
+          <img src="images/chana.jpg" alt="" />
+        </a>
+        <a href="images/Momos1.jpg" class="image Breakfast">
+          <img src="images/Momos1.jpg" alt="" />
+        </a>
+        <a href="images/chowmin.jpg" class="image Breakfast">
+          <img src="images/chowmin.jpg" alt="" />
+        </a>
+        <a href="images/khaja.jpg" class="image Breakfast">
+          <img src="images/khaja.jpg" alt="" />
+        </a>
+
+        <a href="images/rice.jpg" class="image Lunch">
+          <img src="images/rice.jpg" alt="" />
+        </a>
+        <a href="images/biryani.jpg" class="image Lunch">
+          <img src="images/biryani.jpg" alt="" />
+        </a>
+        <a href="images/friedrice.jpg" class="image Lunch">
+          <img src="images/friedrice.jpg" alt="" />
+        </a>
+
+        <a href="images/coke.jpg" class="image Drinks">
+          <img src="images/coke.jpg" alt="" />
+        </a>
+        <a href="images/dew.jpg" class="image Drinks">
+          <img src="images/dew.jpg" alt="" />
+        </a>
+        <a href="images/btea.jpg" class="image Drinks">
+          <img src="images/btea.jpg" alt="" />
+        </a>
+        <a href="images/mtea.jpg" class="image Drinks">
+          <img src="images/mtea.jpg" alt="" />
+        </a>
+        <a href="images/coff.jpg" class="image Drinks">
+          <img src="images/coff.jpg" alt="" />
+        </a>
+
+        <a href="images/donuts.jpg" class="image Bakery">
+          <img src="images/donuts.jpg" alt="" />
+        </a>
+        <a href="images/doughjpg.jpg" class="image Bakery">
+          <img src="images/doughjpg.jpg" alt="" />
+        </a>
+        <a href="images/muffins.jpg" class="image Bakery">
+          <img src="images/muffins.jpg" alt="" />
+        </a>
+        <a href="images/toast.jpg" class="image Bakery">
+          <img src="images/toast.jpg" alt="" />
+        </a>
+      </div>
+    </div>
+    <!-- jquery cdn link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- magnific popup js cdn link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".buttons").click(function () {
+          $(this).addClass("active").siblings().removeClass("active");
+
+          var filter = $(this).attr("data-filter");
+
+          if (filter == "all") {
+            $(".image").show(400);
+          } else {
+            $(".image")
+              .not("." + filter)
+              .hide(200);
+            $(".image")
+              .filter("." + filter)
+              .show(400);
+          }
+        });
+
+        $(".gallery").magnificPopup({
+          delegate: "a",
+          type: "image",
+          gallery: {
+            enabled: true,
+          },
+        });
+      });
+    </script>
+
+    <div class="items"> 
+      <h8 >Our services</h8>
+      <p>Customized Bulk Menu</p>
+       <p>Pre order for lunch</p>
+
+     <footer>
+      <p>Copyright &copy;KSC Canteen 2023 </p>
+     </footer>
+  </div>
+     
+    </body>
+    </html>
+  

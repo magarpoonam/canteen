@@ -1,0 +1,445 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-1:#f74cda;
+    --color-bg: #808080;
+    --color-2: #7d0c7d;
+}
+.bg{
+   /*background: url(images/bg11.jpg);
+    /* background-color: rgb(111, 83, 222); */
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    z-index: 1;
+    background-color: #b19cd8;
+    ;
+}
+nav{
+    background:#e6d1f2;
+     height: 90px;
+     width: 100%;
+     font-weight: bolder;
+     /*position: fixed;*/
+}
+label.logo{
+    color: rgb(255, 252, 251);
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 1px;
+    font-weight: bold;
+    transition: .2s ease all;
+}
+
+nav ul{
+    float:right;
+    margin-right: 30px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: white;
+    font-size: 20px;
+    padding: 7px 13px;
+    border-radius: 3px;
+}
+a.active, a:hover{
+    color: black;
+    transition: .5s;
+}
+.checkbtn{
+    font: size 30px;
+    color:rgb(255, 252, 251);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+#home{
+    font-family: 'Times New Roman';
+    color: purple;
+    display: flex;
+    padding: 3px 2px;
+    flex-direction: column;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s all ease;
+    
+}
+
+#home h3{
+    color: white;
+    text-align: center;
+    font-family:'sans-serif';
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Franklin';
+}
+.h-primary{
+    font-size: 45px;
+    padding: 12px;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid rgb(66, 66, 78);
+    background-color:#e6d1f2;
+    color: white;
+    margin: 17px;
+    font-size: 1.3rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+button.active, button:hover{
+    color: black;
+    transition: .7s;
+}
+#testimonials {
+    padding: 5rem 0;
+    background: rgba(243, 243, 243);
+  }
+  
+  .testimonial-title {
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 400;
+    color: #555;
+  }
+  
+  .testimonial-container {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    padding: 1rem;
+  }
+  
+  .testimonial-box .checked {
+    color: #ff9529;
+  }
+  
+  .testimonial-box .testimonial-text {
+    margin: 1rem 0;
+    color: #444;
+  }
+  
+  .testimonial-box {
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  .customer-photo img {
+    display: block;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    margin: auto;
+  }
+  
+
+  .container {
+	max-width: 500px;
+	margin: 0 auto;
+	padding: 20px;
+    background-color:rgb(246, 242, 237);
+	border-radius: 10px;
+}
+
+.container h1 {
+	text-align: center;
+	margin-bottom: 30px;
+}
+p{
+    font-family:'Roboto', sans-serif;
+    color: white;
+   padding: 8px;
+   margin-bottom: 10px;
+}
+
+form {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 20px;
+}
+
+label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+	width: 100%;
+	padding: 10px;
+	border-radius: 5px;
+	border: none;
+	background-color: #e8e8e8;
+	resize: none;
+}
+
+input[type="submit"] {
+	background-color: #4CAF50;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+     background-color: white 0.2 sease;
+}
+
+input[type="submit"]:hover {
+	background-color: #3e8e41;
+}
+body{
+	background-color: #808080;
+}
+@media (max-width:500px){
+    .container p{
+        font-family: 'Segoe UI', Tahoma;
+        color: lightseagreen;
+        margin-bottom: 7px;
+        padding-bottom: 12px;
+        font-size: 16px;
+    }
+}
+
+
+.items{
+    text-align: center;
+
+}
+footer{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    padding-left: 50px;
+    
+
+}  
+
+@media screen and (max-width:990px){
+    .checkbtn{
+        display: block; 
+         
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .3s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a.active, a:hover{
+        color: black;
+        transition: .5s;
+    }
+    button.active, button:hover{
+        color: black;
+        transition: .7s;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    footer{
+        text-align: center;
+        color: rgb(255, 250, 250);
+        display: flex;
+        margin: 80px;
+        padding-left: 180px;
+        font-size: 20px;
+}
+
+    @media screen and (max-width:520px){
+        label.logo{
+            font-size: 35px;
+            padding-left: 15px;
+            color:#ffffff;
+        }
+        nav ul li a{
+            font-size: 14px;
+        }
+
+        #home{
+            font-family: 'Times New Roman';
+            color:rgb(218, 12, 241);
+
+            padding: 2px 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: 0.5s all ease;
+
+        }
+        #home h3{
+        color: white;
+        text-align: center;
+        font-family:'Times New Roman';
+        font-size: 32px;
+        }
+        #home p{
+            color: white;
+            text-align: center;
+            font-size: 22px;
+            font-family: 'Franklin';
+            padding-top:10px ;  
+            padding-bottom: 10px;
+        }
+        .h-primary{
+            font-size: 2.8rem;
+        padding: 12px;  
+        }
+        .btn{
+        padding: 6px 20px;
+        color: white;
+        margin: 18px;
+        font-size: 1.3rem;
+        border-radius: 10px;
+        cursor: pointer;
+        }
+        a.active, a:hover{
+            color: black;
+            transition: .5s;
+        }
+        button.active, button:hover{
+            color: black;
+            transition: .7s;
+        }
+        footer{
+            text-align: center;
+            color: rgb(254, 253, 253);
+            display: flex;
+            margin: 40px;
+            padding-left: 50px;
+            font-size: 8px;
+        }  
+    }
+    }
+
+
+ @media screen and (max-width: 412px){
+    label.logo{
+        font-size: 20px;
+        padding-left: 10px;
+        color: #ffffff; 
+    }
+    #home h3{
+        color: white;
+        text-align: center;
+        font-family:'Times New Roman';
+        font-size: 22px;
+    }
+    #home p{
+        color:white;
+        text-align: center;
+        font-size: 16px;
+        font-family: 'Franklin';
+        padding-top:4px ;  
+        padding-bottom: 4px;
+    }
+    .btn{
+        padding: 6px 20px;
+       color: white;
+        margin: 18px;
+        font-size: 1.3rem;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    a.active, a:hover{
+        color: black;
+        transition: .5s;
+    }
+    button.active, button:hover{
+        color: black;
+        transition: .7s;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    
+        footer{
+            text-align: center;
+            color: rgb(255, 248, 248);
+            display: flex;
+            margin: 40px;
+            padding-left: 80px;
+            font-size: 8px;
+        }  
+    }
+
+    @media screen and (max-width:375px){
+        label.logo{
+            font-size: 20px;
+            padding-left: 10px;
+            color:rgb(255, 252, 251); 
+        }
+        #home h3{
+            color: white;
+            text-align: center;
+            font-family:'Times New Roman';
+            font-size: 22px;
+        }
+        #home p{
+            color:white;
+            text-align: center;
+            font-size: 16px;
+            font-family: 'Franklin';
+            padding-top:4px ;  
+            padding-bottom: 4px;
+        }
+        .btn{
+            padding: 6px 20px;
+           color: white;
+            margin: 18px;
+            font-size: 1.3rem;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        a.active, a:hover{
+            color: black;
+            transition: .5s;
+        }
+        button.active, button:hover{
+            color: black;
+            transition: .7s;
+    }
+    footer{
+        text-align: center;
+        color: rgb(249, 246, 246);
+        display: flex;
+        margin: 10px;
+        padding-left: 50px;
+        font-size: 7px;
+    }  
+    }
